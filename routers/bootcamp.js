@@ -1,3 +1,5 @@
+//Specifing Routes for all the API and requests.
+
 const express = require('express');
 const router = express.Router();
 

@@ -16,6 +16,7 @@ app.use(bootcampMiddleware)
 app.use('/api/v1/bootcamps',bootcamp)
 
 
+//Running App on specific PORT.
 const PORT = process.env.PORT || 5001
 app.listen(PORT,()=>{
     console.log(`Server Running in ${process.env.NODE_ENV} mode on port ${PORT}`)

@@ -1,4 +1,6 @@
 
+//Writing all Routers Implementation and Separting methods from routers and router methods
+
 //Getting all bootcamps via controller
 exports.getBootcamps = (req,res,next) =>{
     res.status(400).json({success:true , msg: "Show all Bootcamps", myUrl: req.myUrl});
