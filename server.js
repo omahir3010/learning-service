@@ -4,7 +4,12 @@ const dotenv = require('dotenv');
 //Load Env File
 dotenv.config({path: './config/config.env'});
 
+//Load Bootcamp Routers
+const bootcamp = require('./routers/bootcamp');          
+
 const app = express();
+
+app.use('/api/v1/bootcamps',bootcamp)
 
 const PORT = process.env.PORT || 5001
 app.listen(PORT,()=>{
